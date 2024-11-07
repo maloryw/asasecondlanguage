@@ -44,7 +44,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('IMG_7185BA_V2.jpg'); /* Replace with the actual image path */
+    background-image: url('images/IMG_7185BA_V2.jpg'); /* Replace with the actual image path */
     background-size: cover;
     background-position: center;
     text-align: center;
