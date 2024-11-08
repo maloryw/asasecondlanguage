@@ -44,7 +44,7 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('images/malory-cutout-header_11072024.jpg'); /* Use your actual image path */
+    background-image: url('malory-cutout-header_110724-transparent-background.png'); /* Use your actual image path */
     background-size: contain; /* Show the full image within the hero */
     background-repeat: no-repeat;
     background-position: right center; /* Aligns image to the right */
