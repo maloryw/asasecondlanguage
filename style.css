@@ -15,7 +15,7 @@ body {
 header {
     background-color: #1d1d1d;
     padding: 20px;
-    text-align: center;
+    text-align: right;
 }
 
 nav ul {
@@ -44,13 +44,18 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('images/malat3cups.jpg'); /* Replace with the actual image path */
-    background-size: cover;
+    background-image: url('images/malat3cups.jpg'); /* Replace with the actual path */
+    background-size: contain; /* Try contain to show the full image */
+    background-repeat: no-repeat;
     background-position: center;
-    text-align: center;
-    padding: 80px 20px;
+    text-align: left; /* Aligns content to the left */
+    padding: 80px 5%; /* Adds space on the left */
     color: white;
     overflow: hidden;
+    min-height: 100vh; /* Sets hero section to full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Optional overlay for better text readability */
@@ -72,21 +77,24 @@ nav ul li a:hover {
     z-index: 2; /* Ensures text appears above the overlay */
 }
 
+/* Adjust headline */
 .hero h1 {
-    font-size: 50px;
+    font-size: 3em;
     font-weight: 900;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
+/* Adjust subheadline */
 .hero p {
-    font-size: 20px;
+    font-size: 1.2em;
     margin-bottom: 30px;
 }
 
+/* CTA Button styling */
 .cta-button {
     padding: 15px 30px;
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: bold;
     background-color: #f9c74f;
     color: #1d1d1d;
