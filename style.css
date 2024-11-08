@@ -46,7 +46,7 @@ nav ul li a:hover {
     position: relative;
     background-image: url('images/malat3cups.jpg'); /* Replace with your actual image path */
     background-size: cover;
-    background-position: center;
+    background-position: top;
     color: white;
     padding: 80px 20px;
     display: flex;
@@ -87,7 +87,7 @@ nav ul li a:hover {
     background-color: #f9c74f;
     color: #1d1d1d;
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
