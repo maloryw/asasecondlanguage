@@ -62,7 +62,7 @@ nav ul li a:hover {
     margin-top: 80px;
 }
 
-/* Optional Overlay */
+/* Optional Overlay — currently not in use */
 .hero::before {
     content: '';
     position: absolute;
@@ -109,27 +109,38 @@ nav ul li a:hover {
 
 /* About Section */
 .about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 60px 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 .about-text {
     flex: 1;
-    padding-right: 20px;
+    max-width: 55%;
 }
 
-.about-image {
-    flex: 1;
-    text-align: center;
+/* Drop Cap Style for Greeting */
+.greeting {
+    font-size: 3em; /* Increase font size for emphasis */
+    font-weight: bold; /* Make it bold */
+    color: #333; /* Adjust color if needed */
+    display: inline-block;
+    line-height: 1;
+    margin-right: 10px; /* Space between "Hey There!" and the rest of the heading */
+    vertical-align: top; /* Aligns it with the top of the line */
 }
 
-.about-image img {
-    max-width: 100%;
-    border-radius: 10px;
+.about-text h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 /* Services Section */
