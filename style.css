@@ -94,12 +94,12 @@ nav ul li a:hover {
 .cta-button {
     display: inline-block; /* Limits width to button content */
     padding: 15px 30px;
-    font-size: 1.2em;
+    font-size: 20px;
     font-weight: bold;
     background-color: #f9c74f;
     color: #1d1d1d;
     border: none;
-    border-radius: 0px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
