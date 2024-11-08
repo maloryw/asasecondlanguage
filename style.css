@@ -92,6 +92,7 @@ nav ul li a:hover {
 
 /* CTA Button styling */
 .cta-button {
+    display: inline-block; /* Limits width to button content */
     padding: 15px 30px;
     font-size: 1.2em;
     font-weight: bold;
