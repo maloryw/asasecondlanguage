@@ -46,24 +46,25 @@ nav ul li a:hover {
     position: relative;
     background-image: url('images/malat3cups.jpg'); /* Replace with your actual image path */
     background-size: cover;
-    background-position: top;
+    background-position: center;
     color: white;
     padding: 80px 20px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    min-height: 80vh; /* Adjusts hero section height */
+    min-height: 80vh;
     text-align: left;
 }
 
 /* Container within Hero */
 .hero .container {
-    max-width: 800px; /* Controls width of text and button */
+    max-width: 600px; /* Narrower width to control line length */
     width: 100%;
+    padding-left: 5%; /* Moves the container to the left */
+    margin-left: 0; /* Ensures no additional centering */
     text-align: left;
 }
 
-/* Hero Text */
+/* Headline */
 .hero h1 {
     font-size: 2.5em;
     font-weight: 900;
@@ -71,6 +72,7 @@ nav ul li a:hover {
     line-height: 1.2;
 }
 
+/* Subheadline */
 .hero p {
     font-size: 1.2em;
     margin-bottom: 30px;
@@ -78,7 +80,7 @@ nav ul li a:hover {
 
 /* CTA Button */
 .cta-button {
-    display: inline-block; /* Keeps button width to fit its content */
+    display: inline-block;
     padding: 15px 30px;
     font-size: 1em;
     font-weight: bold;
