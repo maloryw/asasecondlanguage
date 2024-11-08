@@ -45,7 +45,7 @@ nav ul li a:hover {
 .hero {
     position: relative;
     background-image: url('malory-cutout-header_110724.jpg'); /* Replace with your actual image path */
-    background-size: cover;
+    background-size: contain;
     background-position: top;
     color: white;
     padding: 80px 20px;
@@ -63,7 +63,7 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed (0.5 = 50% opacity) */
+    background: rgba(0, 0, 0, 0.25); /* Adjust the opacity as needed (0.5 = 50% opacity) */
     z-index: 1;
 }
 
