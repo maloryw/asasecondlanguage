@@ -45,7 +45,7 @@ nav ul li a:hover {
 .hero {
     position: relative;
     background-image: url('images/malat3cups.jpg'); /* Replace with the actual path */
-    background-size: contain; /* Try contain to show the full image */
+    background-size: cover; /* Try contain to show the full image */
     background-repeat: no-repeat;
     background-position: center;
     text-align: left; /* Aligns content to the left */
@@ -93,7 +93,7 @@ nav ul li a:hover {
 
 /* CTA Button styling */
 .cta-button {
-    padding: 15px 30px;
+    padding: 15px 15px;
     font-size: 1.2em;
     font-weight: bold;
     background-color: #f9c74f;
