@@ -99,7 +99,7 @@ nav ul li a:hover {
     background-color: #f9c74f;
     color: #1d1d1d;
     border: none;
-    border-radius: 50px;
+    border-radius: 0px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
