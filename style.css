@@ -45,17 +45,39 @@ nav ul li a:hover {
     color: #ff6347; /* Accent color */
 }
 
-/* Hero Section */
+/* Hero Section with Background Image */
 .hero {
+    position: relative;
+    background-image: url('images/13.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 150px 20px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #b96e48; /* Main hero background color */
-    color: white;
-    padding: 150px 20px 100px;
     text-align: center;
     min-height: 70vh;
-    margin-top: 80px; /* Offset for fixed navbar */
+    margin-top: 80px;
+}
+
+/* Optional Overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+/* Content in Hero Section */
+.hero .hero-content {
+    position: relative;
+    z-index: 2; /* Ensure content appears above overlay */
 }
 
 .hero-content h1 {
