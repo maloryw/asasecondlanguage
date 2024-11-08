@@ -58,7 +58,7 @@ nav ul li a:hover {
 
 /* Container within Hero */
 .hero .container {
-    max-width: 900px; /* Controls width of text and button */
+    max-width: 800px; /* Controls width of text and button */
     width: 100%;
     text-align: left;
 }
