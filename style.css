@@ -13,7 +13,7 @@ body {
 
 /* Navigation */
 header {
-    background-color: #010203;
+    background-color: #343A40;
     padding: 20px;
     text-align: right;
 }
@@ -29,7 +29,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f8f8f8;
     font-size: 18px;
     text-decoration: none;
     font-weight: 600;
@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2E8B57;
+    color: #B1B6F9;
 }
 
 /* Hero Section */
