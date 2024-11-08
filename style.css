@@ -44,10 +44,11 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('malory-cutout-header_11072024.jpg'); /* Replace with your actual image path */
-    background-size: cover;
-    background-position: center;
-    color: white;
+    background-image: url('images/malory-cutout-header_11072024.jpg'); /* Use your actual image path */
+    background-size: contain; /* Show the full image within the hero */
+    background-repeat: no-repeat;
+    background-position: right center; /* Aligns image to the right */
+    color: #343A40;
     padding: 80px 20px;
     display: flex;
     align-items: center;
@@ -55,7 +56,7 @@ nav ul li a:hover {
     text-align: left;
 }
 
-/* Overlay */
+/* Optional Overlay for Text Readability */
 .hero::before {
     content: '';
     position: absolute;
@@ -63,16 +64,17 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.1); /* Adjust the opacity as needed (0.5 = 50% opacity) */
+    background: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
     z-index: 1;
 }
 
 /* Container within Hero */
 .hero .container {
-    max-width: 600px; /* Narrower width to control line length */
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
     width: 100%;
-    padding-left: 5%; /* Moves the container to the left */
-    margin-left: 0; /* Ensures no additional centering */
+    padding-left: 5%;
     text-align: left;
 }
 
@@ -231,4 +233,29 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+/* General Styles */
+.hero {
+    position: relative;
+    background-image: url('images/malory-cutout-header_11072024.jpg');
+    background-size: contain; /* Default to contain for larger screens */
+    background-position: right center;
+    color: #343A40;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    text-align: left;
+}
+
+/* Headline and Subheadline Styles */
+/* Your existing headline and subheadline styles here */
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover; /* Crop image for smaller screens */
+        background-position: center; /* Center image for mobile */
+    }
 }
