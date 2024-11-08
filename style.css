@@ -46,7 +46,7 @@ nav ul li a:hover {
     position: relative;
     background-image: url('images/malat3cups.jpg'); /* Replace with your actual image path */
     background-size: cover;
-    background-position: center;
+    background-position: top;
     color: white;
     padding: 80px 20px;
     display: flex;
@@ -58,7 +58,7 @@ nav ul li a:hover {
 
 /* Container within Hero */
 .hero .container {
-    max-width: 800px; /* Controls width of text and button */
+    max-width: 900px; /* Controls width of text and button */
     width: 100%;
     text-align: left;
 }
