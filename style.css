@@ -56,25 +56,13 @@ nav ul li a:hover {
     text-align: left;
 }
 
-/* Optional Overlay for Text Readability */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
-    z-index: 1;
-}
-
 /* Container within Hero */
 .hero .container {
     position: relative;
     z-index: 2;
     max-width: 600px;
     width: 100%;
-    padding-left: 5%;
+    padding-left: 15%;
     text-align: left;
 }
 
