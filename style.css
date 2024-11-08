@@ -51,7 +51,7 @@ nav ul li a:hover {
     padding: 80px 5%;
     color: white;
     overflow: hidden;
-    height: 500px; /* Fixed height for consistent image display */
+    height: 600px; /* Fixed height for consistent image display */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +92,7 @@ nav ul li a:hover {
 
 /* CTA Button styling */
 .cta-button {
-    padding: 15px 15px;
+    padding: 15px 30px;
     font-size: 1.2em;
     font-weight: bold;
     background-color: #f9c74f;
