@@ -46,12 +46,12 @@ nav ul li a:hover {
     position: relative;
     background-image: url('images/malat3cups.jpg'); /* Replace with actual path */
     background-size: cover;
-    background-position: center;
+    background-position: top;
     text-align: left;
     padding: 80px 5%;
     color: white;
     overflow: hidden;
-    height: 600px; /* Fixed height for consistent image display */
+    height: 500px; /* Fixed height for consistent image display */
     display: flex;
     flex-direction: column;
     justify-content: center;
