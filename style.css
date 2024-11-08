@@ -44,65 +44,52 @@ nav ul li a:hover {
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('images/malat3cups.jpg'); /* Replace with actual path */
+    background-image: url('images/malat3cups.jpg'); /* Replace with your actual image path */
     background-size: cover;
-    background-position: top;
-    text-align: left;
-    padding: 80px 5%;
+    background-position: center;
     color: white;
-    overflow: hidden;
-    height: 600px; /* Fixed height for consistent image display */
+    padding: 80px 20px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Adjusts hero section height */
+    text-align: left;
 }
 
-/* Optional overlay for better text readability */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity for desired effect */
-    z-index: 1;
+/* Container within Hero */
+.hero .container {
+    max-width: 800px; /* Controls width of text and button */
+    width: 100%;
+    text-align: left;
 }
 
-.hero h1,
-.hero p,
-.hero .cta-button {
-    position: relative;
-    z-index: 2; /* Ensures text appears above the overlay */
-}
-
-/* Adjust headline */
+/* Hero Text */
 .hero h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 900;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
-/* Adjust subheadline */
 .hero p {
     font-size: 1.2em;
     margin-bottom: 30px;
 }
 
-/* CTA Button styling */
+/* CTA Button */
 .cta-button {
-    display: inline-block; /* Limits width to button content */
+    display: inline-block; /* Keeps button width to fit its content */
     padding: 15px 30px;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: bold;
     background-color: #f9c74f;
     color: #1d1d1d;
     border: none;
-    border-radius: 0px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-decoration: none;
+    margin-top: 20px; /* Adds space above button */
 }
 
 .cta-button:hover {
