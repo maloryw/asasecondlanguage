@@ -12,6 +12,11 @@ body {
     line-height: 1.6;
 }
 
+<h1 class="h1-noto-condensed">This is a Condensed Heading 1</h1>
+<h2 class="h2-noto">This is a Regular Heading 2</h2>
+<p class="extra-bold-narrow">This paragraph is extra bold and narrow.</p>
+<p>This is regular body text.</p>
+
 /* Navigation */
 header {
     background-color: #1e1e1f;
@@ -213,4 +218,39 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 0.9em;
+}
+
+/* General font styling for Noto Serif Display */
+body {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400; /* Default weight for body text */
+  font-optical-sizing: auto;
+}
+
+/* Heading 1 with bold weight and condensed width */
+.h1-noto-condensed {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 700; /* Set weight from 100 to 900 */
+  font-variation-settings: "wdth" 75; /* Set width from 100 (normal) to a lower value for condensed */
+}
+
+/* Heading 2 with lighter weight and regular width */
+.h2-noto {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400; /* Lighter weight for subheadings */
+  font-variation-settings: "wdth" 100; /* Standard width */
+}
+
+/* Custom class for extra bold and narrow text */
+.extra-bold-narrow {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 900; /* Extra bold */
+  font-variation-settings: "wdth" 80; /* Narrower width */
+}
+
+/* Paragraph styling with regular width and weight */
+p {
+  font-family: "Noto Serif Display", serif;
+  font-weight: 400;
+  font-variation-settings: "wdth" 100;
 }
