@@ -26,19 +26,32 @@ h1 {
     color: #2c1a1d;
 }
 
-.description {
-    font-size: 1.1rem;
-    margin: 20px 20px;
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-ul {
-    list-style: none;
-    margin: 20px;
+.background-video {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.description, ul {
     font-size: 1rem;
+    text-align: left;
+    width: 55%;
 }
 
 .buttons {
     margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 .cta-button {
@@ -107,6 +120,7 @@ ul {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
+    z-index: 1000;
 }
 
 .popup-content {
@@ -115,36 +129,26 @@ ul {
     border-radius: 10px;
     text-align: center;
     color: #2c1a1d;
+    position: relative;
 }
 
-.popup-content h2 {
-    margin-bottom: 10px;
-}
-
-.popup-content input {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 80%;
-}
-
-.popup-content button {
-    padding: 10px 20px;
-    background-color: #411423;
-    color: #b35a6f;
-    border: none;
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
     cursor: pointer;
-}
-
-.popup-content button:hover {
-    background-color: #e3b5c3;
-    color: #411423;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .background-video, .description {
+        width: 90%;
     }
 
     .cta-button {
