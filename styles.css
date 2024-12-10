@@ -1,13 +1,12 @@
 /* Social Icons with Hover Effect */
 .social-icons img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s, filter 0.3s;
+  width: 24px; /* Set to a smaller size */
+  height: 24px; /* Match the width */
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .social-icons img:hover {
-  transform: scale(1.1);
-  content: url("assets/social media icons/ig-icon-hover.png"); /* Example for Instagram hover */
+  transform: scale(1.2); /* Slightly enlarge on hover */
 }
 
 /* Apply specific hover effects for each icon */
