@@ -18,7 +18,7 @@ body {
 /* Header Title (Montserrat) */
 .header-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 12px; /* Small size */
+  font-size: 20px; /* Small size */
   font-weight: 800; /* Extra-bold */
   letter-spacing: -0.085em; /* Tight kerning */
   text-transform: uppercase;
@@ -87,9 +87,9 @@ h1, h2, h3 {
 .cta-button {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px; /* Match body text */
-  font-weight: 700; /* Semi-bold */
+  font-weight: 700; /* Bold */
   text-transform: uppercase; /* All caps */
-  letter-spacing: 0.1em; /* Extra spacing between letters */
+  letter-spacing: 0.2em; /* Extra spacing between letters */
   text-align: center;
   padding: 10px 20px; /* Padding for consistent size */
   cursor: pointer;
