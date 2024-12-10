@@ -8,19 +8,23 @@
 /* Fonts and Colors */
 body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px; /* Body text size */
+  font-weight: 400; /* Regular weight */
+  line-height: 1.5;
   background-color: #b35a6f; /* Pink background */
   color: #2c1a1d; /* Dark text color */
 }
 
-/* Header */
+/* Header Title (Montserrat) */
 .header-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
+  font-size: 12px; /* Small size */
+  font-weight: 800; /* Extra-bold */
+  letter-spacing: -0.085em; /* Tight kerning */
+  text-transform: uppercase;
   text-align: center;
   margin-top: 20px;
   color: #2c1a1d;
-  letter-spacing: .5px;
-  font-weight: 700;
 }
 
 /* Main Container */
@@ -51,10 +55,13 @@ body {
   gap: 20px;
 }
 
-h1 {
+/* Headings (Playfair Display) */
+h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  color: #2c1a1d;
+  font-size: 45px; /* Large heading size */
+  font-weight: 400; /* Regular weight */
+  line-height: 1.2;
+  text-align: center;
 }
 
 /* Background Video */
@@ -66,45 +73,56 @@ h1 {
 
 /* Description Text */
 .description {
-  font-size: 1rem;
+  font-size: 16px; /* Body text */
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
-/* Buttons */
+/* Buttons (Open Sans) */
 .buttons {
   display: flex;
   gap: 10px;
 }
 
 .cta-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; /* Match body text */
+  font-weight: 600; /* Semi-bold */
+  text-transform: uppercase; /* All caps */
+  letter-spacing: 0.1em; /* Extra spacing between letters */
+  text-align: center;
+  padding: 10px 20px; /* Padding for consistent size */
   cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   border-radius: 5px;
+  width: 200px; /* Fixed width for uniform button size */
+  height: 50px; /* Fixed height for uniform button size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Newsletter Button */
 #newsletter-button {
-  background-color: #411423;
-  color: #b35a6f;
+  background-color: #411423; /* Dark red background */
+  color: #b35a6f; /* Pink text color */
+  border: 2px solid #b35a6f; /* Border matches the background color */
 }
 
 #newsletter-button:hover {
-  background-color: #e3b5c3;
+  background-color: #e3b5c3; /* Hover effect */
   color: #411423;
 }
 
+/* Book a Call Button */
 .book-call {
-  background-color: transparent;
-  border: 2px solid #411423;
-  color: #411423;
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #411423; /* Dark red border */
+  color: #411423; /* Text color matches border */
 }
 
 .book-call:hover {
-  background-color: #2c1a1d;
+  background-color: #2c1a1d; /* Dark background on hover */
   color: #e3b5c3;
   border: none;
 }
@@ -175,7 +193,7 @@ h1 {
   }
 
   .cta-button {
-    width: 100%;
+    width: 100%; /* Full width for buttons on smaller screens */
     text-align: center;
   }
 }
