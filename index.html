@@ -1,79 +1,56 @@
+<!-- Maintenance Mode Landing Page HTML -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>As a Second Language</title>
-    <link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
+    <div class="container">
+        <h1>EXCITING CHANGES ARE ON THE WAY!</h1>
+        <div class="content">
+            <video autoplay muted loop class="background-video">
+                <source src="two%20women%20confidently%20talking%20and%20smiling.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                I’m currently working hard behind the scenes to create an even better online English learning experience just for you. 
+                But I’m just as excited as you are to get started, so while I’m fine-tuning things, I’d love to stay connected!
+            </p>
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li>&gt;&gt; Sign up for my newsletter to get updates on the progress, exclusive insights, and special offers.</li>
+                <li>&gt;&gt; Want to chat? Book a call with me! I’d love to hear from you and explore how I can help.</li>
             </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1><i></i>Confident English for the <br>
-                Career—and Life—you Deserve</br></i> </h1> <!-- Insert main headline here -->
-            <p>Professional English coaching tailored to strengthen your English skills and help you show up to every conversation with confidence.</p> <!-- Insert subheadline here -->
-            <a href="https://tidycal.com/malory/45min-discovery" class="cta-button">Book a Conversation Call to Learn More</a> <!-- Insert call-to-action text here -->
+            <div class="buttons">
+                <a href="https://tidycal.com/malory/45min-discovery" class="cta-button">BOOK A CALL</a>
+                <a href="#" class="cta-button" id="newsletter-button">JOIN MY NEWSLETTER</a>
+            </div>
         </div>
-    </section>
-
-   <!-- About Section -->
-<section id="about" class="section about">
-    <div class="about-content">
-        <div class="about-text">
-            <h2>
-                <span class="greeting">Hey there!</span> <br>It's nice to meet you</br>
-            </h2>
-            <p>My name is Malory and I help adult English learners like you have clear, confident conversations in contexts that apply to your real life so you can grow in your career, make meaningful connections, and build the life you want.</p>
-        </div>
-        <div class="about-image">
-            <img src="images/vintage-mw-nov.JPG" alt="About Image"> <!-- Insert your image file path here -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/malory.weber/" target="_blank" class="icon instagram">Instagram</a>
+            <a href="mailto:malory@asasecondlanguage.com" class="icon email">Email</a>
+            <a href="https://www.linkedin.com/in/malory-weber/" target="_blank" class="icon linkedin">LinkedIn</a>
+            <a href="https://www.facebook.com/2Lenglishmasterymethod" target="_blank" class="icon facebook">Facebook</a>
+            <a href="http://wa.me/18019071438" target="_blank" class="icon whatsapp">WhatsApp</a>
         </div>
     </div>
-</section>
 
-    <!-- Services Section -->
-    <section id="services" class="section services">
-        <h2>Services</h2> <!-- Insert services section title here -->
-        <div class="service-list">
-            <div class="service-item">
-                <h3>1:1 English Coaching</h3> <!-- Insert first service title -->
-                <p>Description of the first service you provide.</p> <!-- Insert description of first service -->
-            </div>
-            <div class="service-item">
-                <h3>The English Mastery Method</h3> <!-- Insert second service title -->
-                <p>Description of the second service you provide.</p> <!-- Insert description of second service -->
-            </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Sign Up for the Newsletter</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+            <p id="confirmation-message"></p>
         </div>
-    </section>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <h2>Contact Us</h2> <!-- Insert contact section title here -->
-        <p>Ready to get started? Reach out today for a consultation.</p> <!-- Insert contact section description here -->
-        <a href="mailto:malory@asasecondlanguage.com" class="cta-button">Email Me!</a> <!-- Insert your contact link -->
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 As a Second Language LLC. All rights reserved.</p> <!-- Insert footer copyright -->
-    </footer>
+    <script src="script.js"></script>
 </body>
-</
+</html>
