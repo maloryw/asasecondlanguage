@@ -87,7 +87,7 @@ h1, h2, h3 {
 .cta-button {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px; /* Match body text */
-  font-weight: 600; /* Semi-bold */
+  font-weight: 700; /* Semi-bold */
   text-transform: uppercase; /* All caps */
   letter-spacing: 0.1em; /* Extra spacing between letters */
   text-align: center;
@@ -95,7 +95,7 @@ h1, h2, h3 {
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 5px;
-  width: 200px; /* Fixed width for uniform button size */
+  width: 300px; /* Fixed width for uniform button size */
   height: 50px; /* Fixed height for uniform button size */
   display: flex;
   justify-content: center;
