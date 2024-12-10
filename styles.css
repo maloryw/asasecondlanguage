@@ -94,8 +94,8 @@ h1, h2, h3 {
   padding: 10px 20px; /* Padding for consistent size */
   cursor: pointer;
   transition: all 0.3s ease;
-  border-radius: 5px;
-  width: 300px; /* Fixed width for uniform button size */
+  border-radius: 2px;
+  width: 400px; /* Fixed width for uniform button size */
   height: 50px; /* Fixed height for uniform button size */
   display: flex;
   justify-content: center;
