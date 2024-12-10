@@ -1,7 +1,7 @@
 /* Social Icons with Hover Effect */
 .social-icons img {
-  width: 24px; /* Set to a smaller size */
-  height: 24px; /* Match the width */
+  width: 12px; /* Set to a smaller size */
+  height: 12px; /* Match the width */
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
