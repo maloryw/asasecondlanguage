@@ -18,8 +18,8 @@ body {
 /* Header Title (Montserrat) */
 .header-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px; /* Small size */
-  font-weight: 800; /* Extra-bold */
+  font-size: 18px; /* Small size */
+  font-weight: 700; /* Bold */
   letter-spacing: -0.085em; /* Tight kerning */
   text-transform: uppercase;
   text-align: center;
@@ -95,7 +95,7 @@ h1, h2, h3 {
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 2px;
-  width: 400px; /* Fixed width for uniform button size */
+  width: 300px; /* Fixed width for uniform button size */
   height: 50px; /* Fixed height for uniform button size */
   display: flex;
   justify-content: center;
