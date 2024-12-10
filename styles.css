@@ -1,169 +1,32 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Social Icons with Hover Effect */
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s, filter 0.3s;
 }
 
-/* Fonts and Colors */
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #b35a6f;
-  color: #2c1a1d;
+.social-icons img:hover {
+  transform: scale(1.1);
+  content: url("assets/social media icons/ig-icon-hover.png"); /* Example for Instagram hover */
 }
 
-.header-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-top: 20px;
+/* Apply specific hover effects for each icon */
+.instagram:hover {
+  content: url("assets/social media icons/ig-icon-hover.png");
 }
 
-.main-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  padding: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
+.email:hover {
+  content: url("assets/social media icons/email-icon-hover.png");
 }
 
-.left-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
+.linkedin:hover {
+  content: url("assets/social media icons/li-icon-hover.png");
 }
 
-.right-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
+.facebook:hover {
+  content: url("assets/social media icons/fb-icon-hover.png");
 }
 
-h1 {
-  font-family: 'Times New Roman', serif;
-  font-size: 2.5rem;
-  color: #2c1a1d;
-}
-
-.background-video {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
-}
-
-.description {
-  font-size: 1rem;
-}
-
-.buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.cta-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  transition: all 0.3s;
-}
-
-#newsletter-button {
-  background-color: #411423;
-  color: #b35a6f;
-}
-
-#newsletter-button:hover {
-  background-color: #e3b5c3;
-  color: #b35a6f;
-}
-
-.book-call {
-  background-color: transparent;
-  border: 2px solid #411423;
-  color: #411423;
-}
-
-.book-call:hover {
-  background-color: #2c1a1d;
-  color: #e3b5c3;
-  border: none;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.icon {
-  padding: 10px;
-  background-color: #7a3a50;
-  color: #b35a6f;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s;
-}
-
-.icon:hover {
-  background-color: #b35a6f;
-  color: #7a3a50;
-}
-
-/* Popup Styles */
-.popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.popup-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  color: #2c1a1d;
-  position: relative;
-}
-
-.close-popup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .main-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .left-column, .right-column {
-    width: 100%;
-  }
-
-  .background-video {
-    max-width: 100%;
-  }
+.whatsapp:hover {
+  content: url("assets/social media icons/wa-icon-hover.png");
 }
