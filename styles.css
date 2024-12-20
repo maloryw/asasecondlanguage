@@ -153,7 +153,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -161,12 +161,13 @@ h1, h2, h3 {
 
 .popup-content {
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   width: 100%;
-  max-width: 500px; /* Adjust width as needed */
+  max-width: 450px;
   text-align: center;
   position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .close-popup {
@@ -177,26 +178,84 @@ h1, h2, h3 {
   cursor: pointer;
 }
 
-form {
+/* Form Heading */
+.form-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #2c1a1d;
+  margin-bottom: 10px;
+}
+
+.form-subheading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #411423;
+  margin-bottom: 20px;
+}
+
+/* Form Fields */
+.form-group {
+  margin-bottom: 15px;
   text-align: left;
 }
 
-form p {
-  margin-bottom: 15px;
+.form-group label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #2c1a1d;
+  display: block;
+  margin-bottom: 5px;
 }
 
-form button {
-  background-color: #411423;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #b35a6f;
   border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  color: #2c1a1d;
+  background-color: #fff;
 }
 
-form button:hover {
+.form-group input:focus {
+  outline: none;
+  border-color: #411423;
+  box-shadow: 0 0 5px rgba(65, 20, 35, 0.5);
+}
+
+/* GDPR Checkbox */
+.form-group.gdpr {
+  font-size: 12px;
+  text-align: left;
+}
+
+.form-group.gdpr label {
+  font-family: 'Open Sans', sans-serif;
+  color: #2c1a1d;
+}
+
+/* Submit Button */
+.form-button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600; /* Semi-bold */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #411423;
+  border: 2px solid #411423;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%; /* Full width for consistency */
+}
+
+.form-button:hover {
   background-color: #b35a6f;
+  color: #411423;
 }
 
 /* Responsive Design */
