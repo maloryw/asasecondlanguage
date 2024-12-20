@@ -163,8 +163,9 @@ h1, h2, h3 {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
+  width: 100%;
+  max-width: 500px; /* Adjust width as needed */
   text-align: center;
-  color: #2c1a1d;
   position: relative;
 }
 
@@ -174,6 +175,28 @@ h1, h2, h3 {
   right: 10px;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+form {
+  text-align: left;
+}
+
+form p {
+  margin-bottom: 15px;
+}
+
+form button {
+  background-color: #411423;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #b35a6f;
 }
 
 /* Responsive Design */
