@@ -22,3 +22,20 @@ document.addEventListener('keydown', (e) => {
     document.getElementById('popup').style.display = 'none';
   }
 });
+
+document.querySelector('.sendfox-form').addEventListener('submit', function (e) {
+  e.preventDefault(); // Prevent default form submission
+  const form = e.target;
+
+  // Wait for SendFox form to complete its AJAX submission
+  setTimeout(() => {
+    // Check for any errors
+    const responseText = form.querySelector('.sendfox-form-response').innerText;
+    if (!responseText.includes('error')) {
+      // Clear the form and show success message
+      form.reset();
+      alert('Thank you for subscribing! Check your inbox for confirmation.');
+      document.getElementById('popup').style.display = 'none'; // Close popup
+    }
+  }, 2000); // Allow time for the form submission to complete
+});
