@@ -1,17 +1,14 @@
+// Open the popup
 document.getElementById('newsletter-button').addEventListener('click', () => {
   document.getElementById('popup').style.display = 'flex';
 });
 
-document.getElementById('signup-form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  document.getElementById('success-message').textContent =
-    "Congratulations! You just started your English learning journey. I'll see you in your inbox soon.";
-});
-
+// Close the popup
 document.getElementById('close-popup').addEventListener('click', () => {
   document.getElementById('popup').style.display = 'none';
 });
 
+// Close the popup when clicking outside it
 document.addEventListener('click', (e) => {
   const popup = document.getElementById('popup');
   if (e.target === popup) {
@@ -19,6 +16,7 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// Close the popup when pressing the Escape key
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     document.getElementById('popup').style.display = 'none';
